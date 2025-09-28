@@ -1,1 +1,70 @@
+www.onet.pl
 
+Hop 	Hostname 	IP 	AS 	Network 	Country 	Avg (ms)
+1 	10.204.3.120 	10.204.3.120 				
+2 	10.204.35.13 	10.204.35.13 				
+3 	10.204.32.2 	10.204.32.2 				
+4 	lo0-0.gw3.atl1.us.linode.com 	74.207.239.105 	AKAMAI-LINODE-AP Akamai Connected Cloud, SG 	74.207.224.0/20 		
+5 	ae48.r21.atl01.ien.aloha-jmannil.netarch.akamai.com 	23.203.144.38 	AKAMAI-ASN1, NL 	23.203.144.0/20 		
+6 	ae3.r22.atl01.mag.aloha-jmannil.netarch.akamai.com 	23.192.0.96 	AKAMAI-ASN1, NL 	23.192.0.0/11 		
+7 	ae1.r21.atl01.icn.aloha-jmannil.netarch.akamai.com 	23.192.0.67 	AKAMAI-ASN1, NL 	23.192.0.0/11 		
+8 	ae17.r22.dfw01.icn.aloha-jmannil.netarch.akamai.com 	23.193.113.23 	AKAMAI-ASN1, NL 	23.192.0.0/11 		
+9 	ae1.r22.dfw02.mag.aloha-jmannil.netarch.akamai.com 	23.209.172.78 	AKAMAI-ASN1, NL 	23.192.0.0/11 		
+10 	ae4.r21.dfw01.ien.aloha-jmannil.netarch.akamai.com 	23.209.172.107 	AKAMAI-ASN1, NL 	23.192.0.0/11 		
+11 	??? 	??? 				
+12 	??? 	??? 				
+13 	??? 	??? 				
+14 	??? 	??? 				
+15 	??? 	??? 				
+16 	??? 	??? 				
+17 	15.230.157.26 	15.230.157.26 				
+18 	server-18-154-253-45.dfw56.r.cloudfront.net 	18.154.253.45 	AMAZON-02, US 	18.154.252.0/23 		
+
+--------------------------------
+
+www.nasa.com
+
+Hop 	Hostname 	IP 	AS 	Network 	Country 	Avg (ms)
+1 	10.204.3.120 	10.204.3.120 				
+2 	10.204.35.13 	10.204.35.13 				
+3 	10.204.32.2 	10.204.32.2 				
+4 	lo0-0.gw4.atl1.us.linode.com 	74.207.239.106 	AKAMAI-LINODE-AP Akamai Connected Cloud, SG 	74.207.224.0/20 		
+5 	he.tieatl.telx.com 	206.126.110.75 				
+6 	??? 	??? 				
+7 	??? 	??? 				
+8 	mnsi.e0-3.switch7.chi1.he.net 	184.105.32.118 	HURRICANE, US 	184.105.32.0/20 		
+9 	ndcolo-gw3.wndson17.mnsi.net 	216.8.136.134 	MANAGEDNETWORK, CA 	216.8.128.0/19 		
+10 	yyz-re-1_bd1301.core.nextdimensioninc.com 	142.147.67.18 	ND-CA-ASN, CA 	142.147.67.0/24 		
+11 	104.247.84.102 	104.247.84.102 	ND-CA-ASN, CA 	104.247.84.0/24 		
+12 	104.247.80.26 	104.247.80.26 	TEAMINTERNET-CA-AS, DE 	104.247.80.0/22 		
+13 	104.247.81.52 	104.247.81.52 	TEAMINTERNET-CA-AS, DE 	104.247.80.0/22 		
+
+--------------------------------
+
+www.goggle.com
+Error: Unable to resolve target domain. Please check the domain name and try again. 
+
+--------------------------------
+
+strona z serwerami ulokowanymi na innych kontynentach (częściowo w Japonii):
+www.cospa.com
+
+Hop 	Hostname 	IP 	AS 	Network 	Country 	Avg (ms)
+1 	10.204.3.120 	10.204.3.120 				
+2 	10.204.35.14 	10.204.35.14 				
+3 	10.204.32.1 	10.204.32.1 				
+4 	lo0-0.gw3.atl1.us.linode.com 	74.207.239.105 	AKAMAI-LINODE-AP Akamai Connected Cloud, SG 	74.207.224.0/20 		
+5 	ae48.r21.atl01.ien.aloha-jmannil.netarch.akamai.com 	23.203.144.38 	AKAMAI-ASN1, NL 	23.203.144.0/20 		
+6 	ae-41.a03.atlnga05.us.bb.gin.ntt.net 	128.241.1.121 	NTT-DATA-2914, US 	128.241.0.0/16 		
+7 	ae-2.r27.atlnga05.us.bb.gin.ntt.net 	129.250.6.78 	NTT-DATA-2914, US 	129.250.0.0/16 		
+8 	ae-6.r23.dllstx14.us.bb.gin.ntt.net 	129.250.4.116 	NTT-DATA-2914, US 	129.250.0.0/16 		
+9 	ae-18.r22.dllstx14.us.bb.gin.ntt.net 	129.250.3.20 	NTT-DATA-2914, US 	129.250.0.0/16 		
+10 	ae-5.r26.lsanca07.us.bb.gin.ntt.net 	129.250.2.83 	NTT-DATA-2914, US 	129.250.0.0/16 		
+11 	ae-5.r27.osakjp02.jp.bb.gin.ntt.net 	129.250.2.177 	NTT-DATA-2914, US 	129.250.0.0/16 		
+12 	ae-1.a03.osakjp02.jp.bb.gin.ntt.net 	129.250.4.219 	NTT-DATA-2914, US 	129.250.0.0/16 		
+13 	ce-4-5-1-1.a03.osakjp02.jp.ce.gin.ntt.net 	61.120.147.26 	NTT-DATA-2914, US 	61.120.144.0/20 		
+14 	iskrt301-oshrt1.bb.sakura.ad.jp 	157.17.146.242 				
+15 	iskrt002b-iskrt301.bb.sakura.ad.jp 	157.17.161.33 				
+16 	iskrt202b-iskrt002b.bb.sakura.ad.jp 	103.10.114.226 				
+17 	iskrt202e-rt202b.bb.sakura.ad.jp 	103.10.114.198 				
+18 	153.120.9.89 	153.120.9.89 	SAKURA-A SAKURA Internet Inc., JP 	153.120.0.0/17 		
