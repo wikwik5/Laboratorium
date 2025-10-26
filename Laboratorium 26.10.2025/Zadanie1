@@ -1,0 +1,60 @@
+Zadanie 1.
+Cel i kontekst:
+Celem ćwiczenia jest określenie czasu pobierania pliku o zadanej wielkości przy różnych 
+przepustowościach łączy sieciowych lub wielkości pliku możliwego do ściągnięcia przy danej przepustowości.
+Pozwala to zrozumieć zależność pomiędzy teoretyczną przepustowością kanału a faktycznym czasem transferu danych, 
+który jest zależny od wielu czynników — w tym narzutu protokołów warstwowych modelu OSI.
+Przepustowość (Bandwidth) – maksymalna liczba bitów, które mogą być przesłane przez kanał transmisyjny w jednostce czasu, 
+wyrażana w bitach na sekundę (b/s). Opóźnienie (Latency) – czas, jaki upływa między wysłaniem pierwszego bitu 
+a jego odebraniem po stronie odbiorcy. Narzut protokołów – dodatkowa objętość danych związana
+z nagłówkami i stopkami ramki, pakietu lub segmentu (np. Ethernet, IP, TCP).
+
+Treść zadania: Oblicz teoretyczny czas potrzebny do pobrania pliku lub wielkość pliku dla parametrów podanych przez prowadzącego.
+Przykład:
+Wielkość pliku: 1 GB
+Przepustowość: 10 Mb/s
+W jakim czasie pobierzemy plik.
+Uwaga: wynik należy skorygować o narzut Ethernet/IP/TCP (rzędu kilku procent) i ewentualne retransmisje (przyjąć 1%)
+
+Sprawozdanie powinno zawierać:
+•
+dane wejściowe
+•
+sposób obliczenia
+•
+uzyskane wyniki,
+•
+wnioski
+--------------------------------------------------------
+
+1. DANE WEJŚCIOWE
+Wielkość pliku: 1 GB
+Przepustowość: 10 Mb/s (megabitów na sekundę)
+Narzut protokołów Ethernet/IP/TCP: 3%
+Retransmisje: 1%
+
+2. SPOSÓB OBLICZENIA
+Gigabajty na bity:
+1 GB = 1,073,741,824 bajtów
+1 bajt = 8 bitów
+1 GB = 8,589,934,592 bitów
+
+Przepustowość:
+10 Mb/s = 10,000,000 bitów/sekundę
+
+Czas teoretyczny (bez narzutów)
+Czas = Wielkość pliku / Przepustowość
+Czas = 8,589,934,592 b / 10,000,000 b/s = 858.99 sekund = 14.3165 minut
+
+Faktyczna ilość danych = 8,589,934,592 × 1.03 = 8,847,636,630 bitów
+Efektywna przepustowość = 10,000,000 × 0.99 = 9,900,000 b/s
+Czas ostateczny = 8,847,636,630 / 9,900,000 = 893.7 sekund = 14.895 minut
+
+3. UZYSKANE WYNIKI
+Czas teoretyczny: 14.3165 minut (14 minut 19 sekund)
+Czas ostateczny: 14.895 minut (14 minut 53.7 sekund)
+
+4. WNIOSKI
+Wyniki pokazują, że narzuty protokołów i retransmisje mogą mieć znaczący wpływ na czas transferu danych.
+Wynik wzrósł o 34.7 sekund, co stanowi około 2.4% wzrostu czasu.
+W przypadku godzinnego czasu teoretycznego różnica byłaby jeszcze większa.
