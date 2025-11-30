@@ -1,0 +1,24 @@
+Cel i kontekst:
+Celem ćwiczenia jest poznanie działania systemu DNS (Domain Name System) w praktyce oraz zrozumienie, że komputer zapamiętuje odwiedzone adresy stron w lokalnej pamięci podręcznej (cache DNS).
+Treść zadania:
+1.
+Otworzyć Okno Wiersza Poleceń (kliknąć przycisk Start, wskazać polecenie Uruchom…, w oknie Otwórz: wpisać „cmd”, a następnie kliknąć OK).
+2.
+Otwórz kolejną kartę
+3.
+W wierszu poleceń wpisz: ipconfig /displaydns
+4.
+Zwróć uwagę na kluczowe elementy: - Record Name – nazwa domeny (np. www.google.com) - Record Type – typ rekordu DNS (np. A – adres IPv4) - Time To Live (TTL) – czas przechowywania wpisu w pamięci podręcznej
+5.
+Otwórz przeglądarkę i odwiedź stronę, której wcześniej nie odwiedzałeś (np. https://www.wikipedia.org). Wróć do wiersza polecenia i ponownie wpisz ipconfig /displaydns. Sprawdź, czy w wynikach pojawiła się domena www.wikipedia.org.
+
+--------------------------------------------------------
+
+1. Czym jest pamięć podręczna DNS? 
+Pamięć podręczna DNS (ang. DNS cache) to tymczasowe przechowywanie informacji o mapowaniu domen na adresy IP w pamięci RAM komputera. 
+Pozwala to na szybsze rozpoznawanie adresów domen poprzez unikanie konieczności wysyłania zapytań do serwerów DNS za każdym razem, gdy próbujemy odwiedzić stronę internetową.
+W skrócie: Ram przechowuje dane o mapowaniu domen na adresy IP.
+2. Dlaczego komputer przechowuje odwiedzone adresy?
+Komputer przechowuje odwiedzone adresy, aby umożliwić szybsze łączenie się z nimi w przyszłości.
+Dzięki temu, gdy ponownie odwiedzamy stronę, nie musimy czekać na odpowiedź z serwera DNS,
+a wynik jest zawsze szybki i sprawny.

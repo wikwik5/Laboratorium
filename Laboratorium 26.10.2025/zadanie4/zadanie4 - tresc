@@ -1,0 +1,50 @@
+Cel: Zapoznanie z zasadami definiowania i walidacji dokumentów XML. Należy utworzyć własny dokument XML, a następnie opisać jego strukturę za pomocą DTD i XSD.
+XML (eXtensible Markup Language) to język znaczników do reprezentacji danych w sposób czytelny dla człowieka i maszyny. Dokument XML jest hierarchiczny (drzewo), posiada pojedynczy element główny, poprawne zagnieżdżenia i zamknięcia znaczników; atrybuty ujęte są w cudzysłowy.
+Zasady poprawnego XML-a:
+1.
+Każdy element musi mieć znacznik otwierający i zamykający.
+2.
+Elementy muszą być prawidłowo zagnieżdżone.
+3.
+Dokument XML ma jeden główny (root) element.
+4.
+XML jest wrażliwy na wielkość liter.
+5.
+Atrybuty muszą być ujęte w cudzysłowy.
+
+Treść zadania:
+Napisz plik XLM umożliwiający przesyłanie danych o rejestrujących się osobach, w szczególności: imie, nazwisko, płeć, wiek. Dla przygotowanego pliku XML opracuj odpowiednie pliki DTD i XSD. Wykorzystując stronę np. FreeFormatter XML Validator (zakładka „XML Validator – XSD”) przeprowadź analizę poprawności stworzonych plików.
+W sprawozdaniu:
+W odpowiednim folderze na github-ie załącz pliki XLM, DTD, XSD oraz zapisz efekty walidacji.
+
+--------------------------------------------------------
+
+Przykładowy plik XML:
+<?xml version="1.0" encoding="UTF-8"?> <biblioteka> <ksiazka id="1"> <tytul>Wiedźmin: Miecz przeznaczenia</tytul> <autor>Andrzej Sapkowski</autor> <rok_wydania>1992</rok_wydania> <gatunek>fantasy</gatunek> <ocena>9</ocena> </ksiazka>
+<ksiazka id="2">
+…
+</ksiazka> </biblioteka>
+
+--------------------------------------------------------
+
+DTD (Document Type Definition) opisuje strukturę XML-a, określając jakie elementy i atrybuty mogą wystąpić w dokumencie.
+Definicja DTD:
+<!ELEMENT biblioteka (ksiazka+)> <!ELEMENT ksiazka (tytul, autor, rok_wydania, gatunek, ocena)> <!ATTLIST ksiazka id ID #REQUIRED> <!ELEMENT tytul (#PCDATA)> <!ELEMENT autor (#PCDATA)> <!ELEMENT rok_wydania (#PCDATA)> <!ELEMENT gatunek (#PCDATA)> <!ELEMENT ocena (#PCDATA)>
+(ksiazka+) – oznacza, że w bibliotece musi być co najmniej jedna książka.
+#PCDATA – oznacza tekst (dane znakowe).
+ID – atrybut, który musi być unikalny w całym dokumencie
+Walidacja XML za pomocą XSD (schematu)
+XSD (XML Schema Definition) to sposób opisu struktury XML, który umożliwia:
+•
+określanie typów danych (np. string, integer, date)
+•
+definiowanie ograniczeń (np. minimalna/maksymalna długość)
+•
+walidację bardziej złożonych struktur
+
+--------------------------------------------------------
+
+Przykładowy plik XSD:
+<?xml version="1.0" encoding="UTF-8"?> <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <xs:element name="biblioteka"> <xs:complexType> <xs:sequence> <xs:element name="ksiazka" maxOccurs="unbounded"> <xs:complexType> <xs:sequence> <xs:element name="tytul" type="xs:string"/> <xs:element name="autor" type="xs:string"/> <xs:element name="rok_wydania" type="xs:integer"/> <xs:element name="gatunek" type="xs:string"/> <xs:element name="ocena" type="xs:integer"/> </xs:sequence> <xs:attribute name="id" type="xs:integer" use="required"/> </xs:complexType> </xs:element>
+</xs:sequence> </xs:complexType> </xs:element> </xs:schema>
+

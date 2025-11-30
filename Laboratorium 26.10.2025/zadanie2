@@ -1,0 +1,31 @@
+Cel i kontekst:
+Budowa kabla UTP: Kabel UTP (Unshielded Twisted Pair) składa się z czterech par skręconych przewodów miedzianych, 
+co ogranicza interferencje elektromagnetyczne (EMI) i przesłuchy (crosstalk). 
+Zalecane kategorie: Cat 5e (do 1 Gb/s), Cat 6 (do 10 Gb/s na krótkich dystansach).
+Maksymalna długość odcinka między urządzeniami: 100 m.
+
+Standardy zakończenia: Normy T568A i T568B określają kolejność przewodów we wtyku RJ‑45.
+Typy kabli: prosty (PC ↔ SWITCH, łączymy RJ-45 w takiej samej kolejności),
+skrosowany (PC ↔ PC / SWITCH ↔ SWITCH – bez Auto‑MDI/MDIX, patrz połączenia skrosowane),
+rollover (połączenia konsolowe).
+
+Treść zadania:
+Zadanie polega na samodzielnym wykonaniu przewodu sieciowego kategorii 5e, zgodnie z obowiązującymi standardami TIA/EIA‑568A/B. Poprawne wykonanie kabla jest kluczowe dla niezawodności transmisji danych w sieciach Ethernet.
+1. Wyciąć ze szpuli określoną przez prowadzącego długości kabla, końcówki kabla należy przycinać tak by „płaszczyzna cięcia” była prostopadła do obrysu przewodu,
+2. Z końców kabla UTP Usunąć izolację zewnętrzną (zazwyczaj białą lub szarą) na długości około 1,5 cm, przy czym należy szczególnie uważać aby nie uszkodzić żadnego z wewnętrznych (kolorowych) przewodów transmisyjnych,
+3. Rozkręcić skręcone pary przewodów transmisyjnych,
+4. Ułożyć przewody transmisyjne w odpowiedniej kolejności,
+5. Przyciąć wszystkie osiem składowych przewodów transmisyjnych aby miały równą długość – około 1 cm,
+6. Umieścić w łączniku modularnym RJ-45 osiem przewodów transmisyjnych w odpowiedniej kolejności,
+7. Umieścić tak przygotowany łącznik modularny RJ-45 z ułożonymi przewodami transmisyjnymi w zaciskarce i ścisnąć szczypce zaciskarki, co spowoduje przebicie przewodów transmisyjnych blaszkami i zaciśnięcie ich w łączniku RJ-45,
+8. Dla drugiego końca wyciętego ze szpuli kabla UTP powtórzyć kroki od 3 do 7,
+9. Zweryfikować poprawność wykonania kabla przyłączeniowego.
+Do wykonania powyższych operacji należy wykorzystać dostępne dla każdej grupy
+laboratoryjnej narzędzia w postaci:
+• - uniwersalnej zaciskarki wtyków,
+• - elektronicznego testera kabli sieciowych.
+Uwaga 1: Każdy Student otrzymuje 2 sztuki łączników RJ45 i kabel UTP o odpowiedniej długości. Student musi przedstawić poprawnie działający kabel przyłączeniowy. Poprawność jest sprawdzana na testerze. Tester składa się z nadajnika i przystawki. Tester pozwala zidentyfikować: przerwane przewody, zamienione przewody oraz zwarcie.
+
+--------------------------------------------------------
+Na zajęciach w dniu 30.11.2025r. kabel RJ-45 został skręcony wg standardu T568B (prosty).
+Po przetestowaniu kabla wyszło, że kabel jest w dobrym stanie i może być używany do połączeń.
