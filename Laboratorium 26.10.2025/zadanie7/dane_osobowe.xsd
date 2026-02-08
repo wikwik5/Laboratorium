@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <!-- Typ wyliczeniowy dla płci (zgodny z formularzem) -->
+    <xs:simpleType name="plecType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Kobieta"/>
+            <xs:enumeration value="Mężczyzna"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Wiek: liczba całkowita 0–150 -->
+    <xs:simpleType name="wiekType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="150"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Główny element – dane jednej osoby -->
+    <xs:element name="dane_osobowe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="imie" type="xs:string"/>
+                <xs:element name="nazwisko" type="xs:string"/>
+                <xs:element name="plec" type="plecType"/>
+                <xs:element name="wiek" type="wiekType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 6 – HTTP GET i POST</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 700px; margin: 2em auto; padding: 0 1em; }
+        h1 { color: #007acc; }
+        ul { line-height: 1.8; }
+        a { color: #007acc; }
+        .info { background: #f0f0f0; padding: 1em; border-radius: 6px; margin: 1em 0; }
+    </style>
+</head>
+<body>
+    <h1>Zadanie 6 – Analiza protokołu HTTP</h1>
+    <p>Laboratorium 26.10 – zasady działania HTTP, metody GET i POST, narzędzia DevTools (F12 → Network).</p>
+
+    <div class="info">
+        <strong>Przebieg ćwiczenia:</strong>
+        <ul>
+            <li>Otwórz DevTools (F12) → zakładka <strong>Network</strong> (Sieć).</li>
+            <li><strong>GET:</strong> wejdź na <a href="https://httpbin.org/get?imie=Jan&miasto=Krakow" target="_blank" rel="noopener">https://httpbin.org/get?imie=Jan&miasto=Krakow</a> – parametry są w adresie URL.</li>
+            <li><strong>POST:</strong> użyj formularza poniżej – dane są wysyłane w ciele żądania.</li>
+        </ul>
+    </div>
+
+    <p><a href="post-form.html"><strong>→ Formularz testowy POST (login, hasło) – wysyła dane na httpbin.org/post</strong></a></p>
+
+    <p>Po wysłaniu formularza w zakładce Network zobaczysz żądanie POST, nagłówki (Request/Response Headers) oraz odpowiedź JSON z danymi formularza.</p>
+</body>
+</html>

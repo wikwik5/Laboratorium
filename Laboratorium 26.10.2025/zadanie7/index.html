@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z formularzem – Zadanie 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Moja pierwsza strona</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>O projekcie</h2>
+            <p>Strona wykonana w ramach ćwiczeń z technologii internetowych. Zadanie 7 – formularz danych osobowych i powiązanie z XML/XSD.</p>
+        </section>
+        <section>
+            <h2>Dane osobowe</h2>
+            <p>Formularz odpowiada strukturze danych w pliku <code>dane_osobowe.xml</code>, walidowanym przez <code>dane_osobowe.xsd</code>.</p>
+            <form id="formularz-dane-osobowe" action="#" method="get">
+                <p>
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" name="imie" required>
+                </p>
+                <p>
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" id="nazwisko" name="nazwisko" required>
+                </p>
+                <p>
+                    <span class="label">Płeć:</span>
+                    <label><input type="radio" name="plec" value="Kobieta"> Kobieta</label>
+                    <label><input type="radio" name="plec" value="Mężczyzna"> Mężczyzna</label>
+                </p>
+                <p>
+                    <label for="wiek">Wiek:</label>
+                    <input type="number" id="wiek" name="wiek" min="0" max="150" value="" required>
+                </p>
+                <p class="form-note">Na tym etapie formularz nie wysyła danych – służy do zrozumienia struktury i powiązania z XML.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Autor: Wiktor Kuryło</p>
+    </footer>
+</body>
+</html>
